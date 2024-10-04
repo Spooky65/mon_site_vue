@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "amqplib": "^0.10.0",
     "axios": "^1.7.7",
     "express": "^4.21.0",
     "promisify-child-process": "^4.1.2",

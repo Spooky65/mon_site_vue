@@ -15,7 +15,7 @@ COPY . .
 
 # Construire l'application Vue.js
 RUN npm run build
-
+RUN nohup node server.js &
 # Étape 2 : Exécuter une image nginx pour servir l'application
 FROM nginx:alpine
 
