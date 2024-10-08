@@ -8,6 +8,10 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "overrides": {
+    "uuid": "^7.0.0",
+    "core-js": "^3.23.3"
+  },
   "dependencies": {
     "amqplib": "^0.10.0",
     "axios": "^1.7.7",
