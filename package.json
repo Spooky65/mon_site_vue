@@ -12,6 +12,7 @@
     "amqplib": "^0.10.0",
     "axios": "^1.7.7",
     "express": "^4.21.0",
+    "mon_site_vue": "file:",
     "promisify-child-process": "^4.1.2",
     "tailwind": "^4.0.0",
     "vue": "^3.4.29",

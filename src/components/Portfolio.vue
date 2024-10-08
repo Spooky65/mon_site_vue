@@ -58,10 +58,10 @@
       </p>
       <div class="flex space-x-4">
         <!-- Lien vers le site avec logo -->
-        <a href="https://wavetask.com" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:underline">
+        <s><a disabled href="https://wavetask.com" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:underline">
           <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" class="w-6 h-6" alt="Website Logo">
           <span>Visiter le site</span>
-        </a>
+        </a></s>&nbsp;(Mise en place demain)
         
         <!-- Lien vers le GitHub avec un logo mieux adapté -->
         <a href="https://github.com/Achapeau/POEC_FIL_ROUGE_KAMBAN/tree/dev" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:underline">
@@ -84,16 +84,16 @@
       </p>
       <div class="flex space-x-4">
         <!-- Lien vers le site avec logo -->
-        <a href="https://wavetask.com" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:underline">
+        <a href="https://nicolasdiot.ddns.net:449/" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:underline">
           <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" class="w-6 h-6" alt="Website Logo">
           <span>Visiter le site</span>
         </a>
         
         <!-- Lien vers le GitHub avec un logo mieux adapté -->
-        <a href="https://github.com/NicolasDiot/WaveTask" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:underline">
+        <!-- <a href="https://github.com/NicolasDiot/WaveTask" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:underline">
           <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="w-6 h-6" alt="GitHub Logo">
           <span>Visiter le GitHub</span>
-        </a>
+        </a> -->
       </div>
     </div>
   </div>
