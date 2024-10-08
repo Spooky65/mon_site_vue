@@ -6,6 +6,8 @@ import { exec } from 'promisify-child-process';
 
 const app = express();
 app.use(cors());
+app.options('*', cors()); // Autorise les requêtes OPTIONS pour toutes les routes
+
   
 app.use(express.json());
   
