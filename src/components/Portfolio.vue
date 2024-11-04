@@ -58,10 +58,10 @@
       </p>
       <div class="flex space-x-4">
         <!-- Lien vers le site avec logo -->
-        <s><a disabled href="https://wavetask.com" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:underline">
+        <a href="http://nicolasdiot.ddns.net:8080/" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:underline">
           <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" class="w-6 h-6" alt="Website Logo">
           <span>Visiter le site</span>
-        </a></s>&nbsp;(Mise en place demain)
+        </a>&nbsp;(Id: JeanValJean@gmail.com ,Pass: Jean)
         
         <!-- Lien vers le GitHub avec un logo mieux adapté -->
         <a href="https://github.com/Achapeau/POEC_FIL_ROUGE_KAMBAN/tree/dev" target="_blank" class="flex items-center space-x-2 text-blue-400 hover:underline">
