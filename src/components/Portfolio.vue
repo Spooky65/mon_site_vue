@@ -22,10 +22,10 @@
       <h2 class="text-2xl font-bold text-blue-300 mb-4">Compétences Techniques</h2>
       <ul class="grid grid-cols-2 gap-4 text-gray-300">
         <li>PHP (Symfony, Laravel)</li>
-        <li>JavaScript (Vue.js, jQuery)</li>
+        <li>JavaScript (Vue.js, jQuery, Angular)</li>
         <li>Java (Spring)</li>
         <li>Docker, Jenkins, Git</li>
-        <li>HTML/CSS, Tailwind, Bootstrap</li>
+        <li>HTML/CSS, Tailwind, Bootstrap, Twig</li>
       </ul>
     </div>
 

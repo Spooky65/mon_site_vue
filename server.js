@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors'; // Importation de CORS
-import { exec } from 'promisify-child-process';
+import fs from 'fs';
 
 // import bodyParser from 'body-parser';
 
@@ -11,30 +11,17 @@ app.options('*', cors()); // Autorise les requêtes OPTIONS pour toutes les rout
   
 app.use(express.json());
   
-// Route pour traiter la soumission du formulaire
-app.post('/send-email', (req, res) => {
-  const { name, email, message } = req.body;
-
-  // Créer le corps de l'email
-//   const emailBody = `Nom: ${name}\nEmail: ${email}\nMessage: ${message}`;
-var body = `To: connect.tracker.nd@gmx.fr\nFrom: connect.tracker.nd@gmx.fr\nSubject: Mail de ${name} - ${email}\n\n ${message}`;
-
-  // Commande msmtp pour envoyer l'email
-  const command = `echo "${body}" | msmtp -a default connect.tracker.nd@gmx.fr`;
-
-  // Exécuter la commande pour envoyer l'email
-  exec(command, (error, stdout, stderr) => {
-    if (error) {
-      console.error(`Erreur lors de l'envoi de l'email : ${error.message}`);
-      return res.status(500).send('Erreur lors de l\'envoi de l\'email');
-    }
-    if (stderr) {
-      console.error(`Erreur msmtp : ${stderr}`);
-      return res.status(500).send('Erreur msmtp');
-    }
-    console.log(`Email envoyé : ${stdout}`);
-    res.send('Email envoyé avec succès');
-  });
+app.get('/portfolio', (req, res) => {
+  var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  var port = req.headers['x-forwarded-port'] || req.connection.remotePort;
+  var date = req.headers['x-forwarded-date'] || new Date();
+  var url = req.headers['x-forwarded-url'] || req.query['truePath'];
+  // var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+  var data = `${date} | ${ip}:${port} | ${url}\n`;
+  fs.writeFile('connect', data, { flag: 'a+' }, (err) => { 
+    // In case of a error throw err. 
+    if (err) throw err; 
+  }) 
 });
 
 // Démarrer le serveur
